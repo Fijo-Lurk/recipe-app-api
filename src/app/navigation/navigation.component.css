@@ -1,0 +1,52 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.navigation-text a{
+  margin: 0rem 1rem 0rem 1rem;
+  color: white;
+  
+ 
+}
+.navigation-text a:hover{
+  color: #1CB5E0;
+}
+
+.nav-container{
+  background: linear-gradient(90deg, #1b2f57 0%, #182848 100%);
+  color: white;
+}
+
+.logo{
+  width: 25px;
+  height: 25px;
+  margin-left: 0.5rem;
+}
+.menu{
+  display: none;
+}
+.link{
+  display: block;
+  color: white;
+}
+.link-menu{
+  color: black;
+}
+
+.nav-flex{
+  display: flex;
+}
+
+
+@media only screen and (max-width: 768px){
+  .menu{
+    display: inline;
+  }
+  .link{
+    display: none;
+  }
+}
+
+
+
+

@@ -1,0 +1,38 @@
+
+
+.example-input-label,
+.example-add-tab-button,
+.example-delete-tab-button {
+  margin: 8px;
+}
+
+
+.mt-05{
+    margin-top: 0.5rem;
+}
+
+
+.diet-button{
+  margin-top: 0.5rem;
+}
+
+.diet-button-container{
+  display: flex; 
+}
+.diet-button-container button{
+  margin: 0.5rem;
+  background-color: #FF7641;
+  color: white;
+}
+
+.diet-button-container button:hover{
+  background-color: rgb(19, 149, 19);
+}
+
+
+
+
+
+.mat-tab-group.mat-primary .mat-ink-bar{
+  background-color: red;
+}

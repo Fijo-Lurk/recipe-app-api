@@ -1,0 +1,38 @@
+<div>
+
+<section class="specific-recipe-container">
+  <h1>{{recipes?.title}}</h1>
+  
+<div class="info-container">
+    
+    <div>
+       <div class="img-container">
+        <img src="{{recipes?.image}}" alt="">     
+       </div>
+       <ul class="md-full">
+        <li *ngIf="recipes?.readyInMinutes">⏱ {{recipes?.readyInMinutes}} min</li>
+        <li *ngIf="recipes?.servings">🍽 {{recipes?.servings}} servings</li>
+        <li *ngIf="recipes?.creditsText">credits: {{recipes?.creditsText}}</li>
+    </ul>
+    <a (click)="addBookmark()" class="save-btn small-btn" routerLink="/bookmark" routerLinkActive="active">Bookmark</a>
+   <div class="diet-small">
+    <h1 *ngIf="recipes?.glutenFree">glutenFree ✅</h1>
+    <h1 *ngIf="recipes?.dairyFree">dairyFree ✅</h1>
+    <h1 *ngIf="recipes?.vegetarian">vegetarian ✅</h1>
+    <h1 *ngIf="recipes?.veryHealthy">veryHealthy ✅</h1>
+   </div>
+   <h1 *ngIf="recipes?.summary" >Summary</h1>
+    <p class="recipe-information">{{recipes?.summary}}</p>
+    </div>
+    <div>
+      <h1 *ngIf="recipes?.instructions">Instructions</h1>
+      <p class="recipe-information pb">{{recipes?.instructions}}</p>
+    </div>
+
+    <a (click)="addBookmark()" class="save-btn big-btn" routerLink="/bookmark" routerLinkActive="active">Bookmark</a>
+    
+</div>
+</section>
+</div>
+
+<!-- <img class="wave" src="../../assets/images/wave.svg"> -->

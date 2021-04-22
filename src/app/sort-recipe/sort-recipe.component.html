@@ -1,0 +1,35 @@
+
+<div>
+
+
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-description>
+                select meal and or diet option ⬇
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          
+    
+          <mat-tab-group>
+                <mat-tab *ngFor="let tab of tabs; let food = index" [label]="tab">
+                  <ng-template mat-tab-label>
+                    <span (click)="submitCourse(tab)">{{tab}}</span>
+                </ng-template>
+                <div class="diet-button-container">
+                  <div *ngFor="let diet of diets; let dietname = index" >
+                    <button class="diet-button" (click)="submitDiet(diets[dietname])" type="submit" mat-raised-button>{{diets[dietname]}}</button>
+                  </div>
+                </div>
+                
+                </mat-tab>
+          </mat-tab-group>    
+          
+        </mat-expansion-panel>
+      
+     
+      </mat-accordion>
+
+
+      <app-foodlist [selectedFoodCourse]='selectedFoodCourse' [selectedDiet]="selectedDiet"></app-foodlist>
+</div>

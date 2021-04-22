@@ -1,0 +1,23 @@
+
+
+<div class="foodlist-container">
+   <div class="btn-container">
+    <button class="seach-btn" type="submit" (click)="showRecipe()">Seach</button>
+   </div>
+<section class="hero-contaier">
+    <div *ngFor="let recipe of recipes"  class="food-recipe-container">
+        <div class="recipe-container">
+        <img class="img-container-recipe" src="{{recipe.image}}" alt="{{recipe.title}}">
+        <div>
+            <h3>{{recipe.title}}</h3>
+        </div>
+        <a class="view-recipe" routerLink="/recipe/{{recipe.id}}" routerLinkActive="active">view recipe</a>
+        </div>
+    </div>
+</section>
+<img class="diver" src="../../assets/images/diver.svg">
+<img class="diver-two" src="../../assets/images/diver.svg">
+<img class="fish-one" src="../../assets/images/twobluefish.svg">
+<img class="fish-two" src="../../assets/images/fish.svg">
+<img class="wave" src="../../assets/images/wave.svg">
+</div>

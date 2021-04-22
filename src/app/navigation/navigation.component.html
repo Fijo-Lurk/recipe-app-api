@@ -1,0 +1,31 @@
+
+
+
+  <mat-toolbar class="nav-container">
+    <mat-toolbar-row>
+      <a routerLink="/">FoodCatch</a>
+      <img class="logo" src="../../assets/images/logo.png" alt="">
+      <span class="example-spacer">
+      </span>
+    
+      <div class="navigation-text">
+        <div class="nav-flex">
+          <a class="link" routerLink="/">Home</a>
+          <a class="link" routerLink="recipes">Recipes</a>
+          <a class="link" routerLink="bookmark">Bookmark</a>
+        </div>
+    
+        <div class="menu">
+          <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <a mat-menu-item class="link-menu" routerLink="/">Home</a>
+         <a mat-menu-item class="link-menu" routerLink="recipes">Recipes</a>
+          <a mat-menu-item  class="link-menu" routerLink="bookmark">Bookmark</a>
+        </mat-menu>
+        </div>
+      </div>
+    </mat-toolbar-row>
+
+
+  </mat-toolbar>
+
