@@ -22,11 +22,11 @@
     <h1 *ngIf="recipes?.veryHealthy">veryHealthy ✅</h1>
    </div>
    <h1 *ngIf="recipes?.summary" >Summary</h1>
-    <p [innerHTML]="recipes?.summary" class="recipe-information pb">{{recipes?.summary}}</p>
+    <p id="center" [innerHTML]="recipes?.summary" class="recipe-information pb">{{recipes?.summary}}</p>
     </div>
     <div>
       <h1 *ngIf="recipes?.instructions">Instructions</h1>
-      <p *ngIf="recipes?.instructions" [innerHTML]="recipes?.instructions" class="recipe-information pb">{{recipes?.instructions}}</p>
+      <div *ngIf="recipes?.instructions" [innerHTML]="recipes?.instructions" class="recipe-information pb">{{recipes?.instructions}}</div>
     </div>
 
     <a (click)="addBookmark()" class="save-btn big-btn" routerLink="/bookmark" routerLinkActive="active">Bookmark</a>
