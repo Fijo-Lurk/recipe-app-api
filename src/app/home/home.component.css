@@ -135,4 +135,10 @@ header h1{
         width: 250px;
         margin: 0 auto;
     }
+    .fish{
+        left: 73%;
+    }
+    .diver{
+        left: 45%;
+    }
 }
